@@ -11,6 +11,8 @@ import { QuizeditorComponent } from './page/quizeditor/quizeditor.component';
 import { QuestioneditorComponent } from './page/questioneditor/questioneditor.component';
 import { QuizComponent } from './page/quiz/quiz.component';
 import { NavComponent } from './nav/nav.component';
+import { FilterPipe } from './pipe/filter.pipe';
+import { SorterPipe } from './pipe/sorter.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { NavComponent } from './nav/nav.component';
     QuizeditorComponent,
     QuestioneditorComponent,
     QuizComponent,
-    NavComponent
+    NavComponent,
+    FilterPipe,
+    SorterPipe
   ],
   imports: [
     BrowserModule,
