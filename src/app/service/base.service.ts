@@ -49,7 +49,7 @@ export class BaseService<T extends { id: number }> {
       .delete<T>(`${this.config.apiUrl}/${this.entityName}/${entityId}`)
   }
 
-  like(key: string, value: string, limit: number = 20): Observable<T[]> {
+  /* like(key: string, value: string, limit: number = 20): Observable<T[]> {
     key = `${key}_like`;
     const query = `${this.config.apiUrl}/${this.entityName}?${key}=${value}&_limit=${limit}`;
     return this.http.get<T[]>(query);
@@ -58,5 +58,5 @@ export class BaseService<T extends { id: number }> {
   fullText(value: string): Observable<T[]> {
     const query = `${this.config.apiUrl}/${this.entityName}?q=${value}`;
     return this.http.get<T[]>(query);
-  }
+  } */
 }
