@@ -13,7 +13,7 @@
     </div>
     <div class="row">
         <div class="col-md-10 offset-md-1 my-4 text-center">
-            <button class="btn btn-block btn-success">
+            <button class="btn btn-block btn-success" routerLink="/question/ + 0">
                 Új quiz létrehozása
             </button>
         </div>
@@ -41,7 +41,7 @@
                         <td>{{ quiz.active }}</td>
                         <td>
                             <div class="btn-group">
-                                <button class="btn btn-primary">
+                                <button class="btn btn-primary" routerLink="/quiz/ + quiz.id">
                                     Update
                                 </button>
                                 <button (click)="onRemove(quiz)" class="btn btn-danger">
